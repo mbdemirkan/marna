@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:text="Sipariş durumu: Hazırlanıyor"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
