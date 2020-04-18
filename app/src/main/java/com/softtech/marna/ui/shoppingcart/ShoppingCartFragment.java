@@ -14,6 +14,7 @@ import com.softtech.marna.shoppingcart.Product;
 import com.softtech.marna.shoppingcart.ShoppingCartAdapter;
 import com.softtech.marna.ui.order.OrderViewModel;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,10 +64,8 @@ public class ShoppingCartFragment extends Fragment {
 
         @Override
         protected List<Product> doInBackground(Void... params) {
-            Product p = new Product();
-            p.setName("Name");
-            p.setStore("Store");
-            list_items.add(p); // ismini ve telefon numarasını list içine at
+            list_items.add(new Product("Name", "Store", new BigDecimal("100.12"), 5));
+            list_items.add(new Product("Name2", "Store2", new BigDecimal("100.12"), 5));
             return list_items;
         }
 

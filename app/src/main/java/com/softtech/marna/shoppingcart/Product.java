@@ -6,7 +6,14 @@ public class Product {
     private String name;
     private String store;
     private BigDecimal price;
-    private BigDecimal count;
+    private Integer count;
+
+    public Product(String name, String store, BigDecimal price, int count) {
+        this.name = name;
+        this.store = store;
+        this.price = price;
+        this.count = count;
+    }
 
     public String getName() {
         return name;
@@ -32,11 +39,11 @@ public class Product {
         this.price = price;
     }
 
-    public BigDecimal getCount() {
+    public Integer getCount() {
         return count;
     }
 
-    public void setCount(BigDecimal count) {
+    public void setCount(Integer count) {
         this.count = count;
     }
 }
