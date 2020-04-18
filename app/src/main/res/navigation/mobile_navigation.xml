@@ -19,7 +19,20 @@
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.softtech.marna.ui.notifications.SearchFragment"
+        android:name="com.softtech.marna.ui.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.softtech.marna.ui.category.CategoryFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.softtech.marna.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
