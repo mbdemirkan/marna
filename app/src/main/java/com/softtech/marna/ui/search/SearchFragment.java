@@ -1,4 +1,4 @@
-package com.softtech.marna.ui.notifications;
+package com.softtech.marna.ui.search;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

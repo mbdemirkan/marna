@@ -3,4 +3,6 @@
     <string name="title_home">Home</string>
     <string name="title_map">Harita</string>
     <string name="title_search">Ürün Arama</string>
+    <string name="title_category">Kategori Arama</string>
+    <string name="title_profile">Kullanıcı Bilgilerim</string>
 </resources>

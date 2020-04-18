@@ -1,4 +1,4 @@
-package com.softtech.marna.ui.notifications;
+package com.softtech.marna.ui.search;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
