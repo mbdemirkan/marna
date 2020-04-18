@@ -39,9 +39,9 @@ public class ListViewFragment extends Fragment implements View.OnClickListener {
         //TODO shopping cart
         View view = inflater.inflate(R.layout.fragment_siparis_durumu, container, false);
 
-        listview_contacts = (ListView)view.findViewById(R.id.listView_contacts);
+        listview_contacts = (ListView)view.findViewById(R.id.shopping_cart_list);
 
-        //listview_contacts.setItemsCanFocus(false);
+        listview_contacts.setItemsCanFocus(false);
 
         button_start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +110,7 @@ public class ListViewFragment extends Fragment implements View.OnClickListener {
         startActivity(phoneCallIntent);
     }
 
-    public  class FetchAsyncTask extends AsyncTask<Void,Void,List<Product>>{
+    public  class FetchAsyncTask extends AsyncTask<Void,Void,List<Product>> {
         @Override
         protected void onPreExecute() {
 
@@ -122,7 +122,10 @@ public class ListViewFragment extends Fragment implements View.OnClickListener {
 
         @Override
         protected List<Product> doInBackground(Void... params) {
-            list_items.add(new Product()); // ismini ve telefon numarasını list içine at
+            Product p = new Product();
+            p.setName("Name");
+            p.setStore("Store");
+            list_items.add(p); // ismini ve telefon numarasını list içine at
             return list_items;
         }
 

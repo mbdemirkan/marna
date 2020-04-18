@@ -48,8 +48,6 @@ public class ShoppingCartAdapter  extends ArrayAdapter<Product> {
         setTagsToViews(viewHolder.imgCall, position);  // arama imagebuttona tag olarak position ver
         setTagsToViews(viewHolder.imgMsg, position);  // mesaj gönderme imagebuttona tag olarak position ver
 
-        viewHolder.imgMsg.setTag(position);
-        viewHolder.imgCall.setTag(position);
         viewHolder.txtName.setText(product.getName());
         viewHolder.txtNumber.setText(product.getStore());
 
@@ -61,7 +59,8 @@ public class ShoppingCartAdapter  extends ArrayAdapter<Product> {
     }
 
     private void setClickListeners(View view) {
-        view.setOnClickListener(clickListener);
+        //TODO click listener
+//        view.setOnClickListener(clickListener);
     }
 
     private static class ViewHolder {
