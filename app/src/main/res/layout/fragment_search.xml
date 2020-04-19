@@ -28,7 +28,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:drawable/ic_menu_search"
-        android:onClick="searchButtonClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textSearch"
         app:layout_constraintTop_toBottomOf="@+id/buttonSpeak" />
