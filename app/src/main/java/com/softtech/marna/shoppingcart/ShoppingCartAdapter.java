@@ -33,7 +33,9 @@ public class ShoppingCartAdapter  extends ArrayAdapter<Product> {
 
             viewHolder = new ViewHolder();
             viewHolder.txtName = (TextView)view.findViewById(R.id.txtName);
-            viewHolder.txtNumber = (TextView)view.findViewById(R.id.txtNumber);
+            viewHolder.txtStore = (TextView)view.findViewById(R.id.txtStore);
+            viewHolder.txtPrice = (TextView)view.findViewById(R.id.txtPrice);
+            viewHolder.txtCount = (TextView)view.findViewById(R.id.txtCount);
 
             view.setTag(viewHolder);
         } else {
@@ -42,14 +44,16 @@ public class ShoppingCartAdapter  extends ArrayAdapter<Product> {
 
         final Product product = getItem(position);
 
-        setClickListeners(viewHolder.imgCall);  // arama imagebuttona tıklanma eventi ver
-        setClickListeners(viewHolder.imgMsg);   // mesaj gönderme imagebuttona tıklanma eventi ver
+//        setClickListeners(viewHolder.imgCall);  // arama imagebuttona tıklanma eventi ver
+//        setClickListeners(viewHolder.imgMsg);   // mesaj gönderme imagebuttona tıklanma eventi ver
 
-        setTagsToViews(viewHolder.imgCall, position);  // arama imagebuttona tag olarak position ver
-        setTagsToViews(viewHolder.imgMsg, position);  // mesaj gönderme imagebuttona tag olarak position ver
+//        setTagsToViews(viewHolder.imgCall, position);  // arama imagebuttona tag olarak position ver
+//        setTagsToViews(viewHolder.imgMsg, position);  // mesaj gönderme imagebuttona tag olarak position ver
 
         viewHolder.txtName.setText(product.getName());
-        viewHolder.txtNumber.setText(product.getStore());
+        viewHolder.txtStore.setText(product.getStore());
+        viewHolder.txtPrice.setText(product.getPrice().toPlainString());
+        viewHolder.txtCount.setText(product.getCount().toString() + " adet ");
 
         return view;
     }
@@ -65,8 +69,8 @@ public class ShoppingCartAdapter  extends ArrayAdapter<Product> {
 
     private static class ViewHolder {
         TextView txtName;
-        TextView txtNumber;
-        ImageButton imgCall;
-        ImageButton imgMsg;
+        TextView txtStore;
+        TextView txtPrice;
+        TextView txtCount;
     }
 }

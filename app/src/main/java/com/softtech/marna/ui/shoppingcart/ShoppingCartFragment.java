@@ -64,8 +64,8 @@ public class ShoppingCartFragment extends Fragment {
 
         @Override
         protected List<Product> doInBackground(Void... params) {
-            list_items.add(new Product("Name", "Store", new BigDecimal("100.12"), 5));
-            list_items.add(new Product("Name2", "Store2", new BigDecimal("100.12"), 5));
+            list_items.add(new Product("Özsüt", "Bizim Bakkal", new BigDecimal("3.12"), 2));
+            list_items.add(new Product("Ekmek", "Sizin Market", new BigDecimal("1.25"), 3));
             return list_items;
         }
 
