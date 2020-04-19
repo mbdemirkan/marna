@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -27,12 +28,14 @@ public class SearchFragment extends Fragment {
         final Button search = (Button) root.findViewById(R.id.buttonSearch);
         final Button speak = (Button) root.findViewById(R.id.buttonSpeak);
         final Button barcode = (Button) root.findViewById(R.id.buttonBarcode);
+        final ImageView image = (ImageView) root.findViewById(R.id.imageView);
 
         search.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+                image.setVisibility(View.VISIBLE);
             }
         });
         speak.setOnClickListener(new View.OnClickListener()

@@ -13,12 +13,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBarcode"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonBarcode" />
 
     <Button
         android:id="@+id/buttonSearch"
@@ -53,4 +55,14 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonSpeak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="327dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/search"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textSearch"
+        tools:layout_editor_absoluteX="50dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
