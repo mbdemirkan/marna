@@ -5,4 +5,10 @@
     <string name="title_search">Ürün Arama</string>
     <string name="title_category">Kategori Arama</string>
     <string name="title_profile">Kullanıcı Bilgilerim</string>
+    <string name="text_barcode">Barkod Arama</string>
+    <string name="text_orders">Siparişlerim</string>
+    <string name="text_favorites">Favori Ürünlerim</string>
+    <string name="text_address">Adres</string>
+    <string name="text_password">Şifre</string>
+    <string name="text_creditcards">Kart Bilgilerim</string>
 </resources>

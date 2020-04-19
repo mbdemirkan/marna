@@ -15,10 +15,10 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ürün ara"
         app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBarcode" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonBarcode"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonSearch"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Barkod"
+        android:text="@string/text_barcode"
         app:layout_constraintEnd_toStartOf="@+id/buttonSpeak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
